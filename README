@@ -1,74 +1,104 @@
-# QA-Automation-Exercise-Suite
+# AutomationExercise-Testing
 
 Automated testing suite for [AutomationExercise](http://automationexercise.com) using Playwright.
 
 ## Test Cases Implemented
 
-1. User Registration Test
-2. Login Test (Valid Credentials)
-3. Login Test (Invalid Credentials)
-4. Logout Test
-5. Register User with Existing Email
-6. Contact Us Form Test
-7. Test Cases Page Verification
-8. Product Details Verification
-9. Product Search Functionality
+1. **User Registration Test**
+2. **Login Test (Valid Credentials)**
+3. **Login Test (Invalid Credentials)**
+4. **Logout Test**
+5. **Register User with Existing Email**
+6. **Contact Us Form Test**
+7. **Test Cases Page Verification**
+8. **Product Details Verification**
+9. **Product Search Functionality**
 
 ## Setup
 
-```bash
-# Install dependencies
-npm install
+To get started with the project, follow these steps:
 
-# Install browsers
-npx playwright install
-```
+1. Install the necessary dependencies:
+
+   ```bash
+   npm install
+   ```
+
+2. Install Playwright browsers:
+
+   ```bash
+   npx playwright install
+   ```
 
 ## Running Tests
 
-```bash
-# Run all tests
-npm test
+You can run the tests using the following commands:
 
-# Run specific test
-npx playwright test tests/test-case1.spec.js
+1. **Run all tests:**
 
-# Show report
-npm run report
-```
+   ```bash
+   npx playwright test
+   ```
+
+2. **Run a specific test:**
+
+   ```bash
+   npx playwright test tests/test-case1.spec.js
+   ```
+
+3. **View test reports:**
+
+   ```bash
+   npm run report
+   ```
 
 ## Features
 
-- End-to-end testing
+- Comprehensive end-to-end testing
 - Cross-browser testing support
 - HTML report generation
-- Screenshot capture on failure
+- Automatic screenshot capture on failure
 - Video recording for failed tests
-- Custom port (9323) for report viewing
+- Custom port (9323) for viewing reports
 
 ## Project Structure
+
+The project follows this structure:
 
 ```
 AutomationExercise-Testing/
 ├── tests/
 │   ├── test-case1.spec.js
 │   ├── test-case2.spec.js
+│   ├── test-case3.spec.js
 │   └── ...
 ├── playwright.config.mjs
 ├── package.json
-└── README.md
+├── README.md
+└── ...
 ```
 
 ## Technologies Used
 
-- Playwright
-- Node.js
-- JavaScript
+- **Playwright**: For end-to-end testing
+- **Node.js**: Runtime environment
+- **JavaScript**: Scripting language
 
 ## Report Viewing
 
-To view the test report, run:
+To view the test report, run the following command:
+
 ```bash
 npm run report
 ```
-The report will be available at `http://localhost:9323`
+
+The report will be available at [http://localhost:9323](http://localhost:9323).
+
+## Contributing
+
+If you'd like to contribute, feel free to submit a pull request. Ensure your code follows the existing coding standards and includes appropriate test coverage.
+
+---
+
+Happy Testing! 🚀
+
