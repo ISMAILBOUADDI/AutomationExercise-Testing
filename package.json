@@ -1,0 +1,16 @@
+{
+  "name": "automation-project",
+  "version": "1.0.0",
+  "description": "Automation Exercise Tests",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "playwright test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@playwright/test": "^1.39.0"
+  }
+}
