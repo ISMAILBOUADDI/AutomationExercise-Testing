@@ -1,0 +1,74 @@
+# QA-Automation-Exercise-Suite
+
+Automated testing suite for [AutomationExercise](http://automationexercise.com) using Playwright.
+
+## Test Cases Implemented
+
+1. User Registration Test
+2. Login Test (Valid Credentials)
+3. Login Test (Invalid Credentials)
+4. Logout Test
+5. Register User with Existing Email
+6. Contact Us Form Test
+7. Test Cases Page Verification
+8. Product Details Verification
+9. Product Search Functionality
+
+## Setup
+
+```bash
+# Install dependencies
+npm install
+
+# Install browsers
+npx playwright install
+```
+
+## Running Tests
+
+```bash
+# Run all tests
+npm test
+
+# Run specific test
+npx playwright test tests/test-case1.spec.js
+
+# Show report
+npm run report
+```
+
+## Features
+
+- End-to-end testing
+- Cross-browser testing support
+- HTML report generation
+- Screenshot capture on failure
+- Video recording for failed tests
+- Custom port (9323) for report viewing
+
+## Project Structure
+
+```
+AutomationExercise-Testing/
+├── tests/
+│   ├── test-case1.spec.js
+│   ├── test-case2.spec.js
+│   └── ...
+├── playwright.config.mjs
+├── package.json
+└── README.md
+```
+
+## Technologies Used
+
+- Playwright
+- Node.js
+- JavaScript
+
+## Report Viewing
+
+To view the test report, run:
+```bash
+npm run report
+```
+The report will be available at `http://localhost:9323`
