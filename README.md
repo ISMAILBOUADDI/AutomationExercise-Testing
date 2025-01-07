@@ -94,10 +94,6 @@ npm run report
 
 The report will be available at [http://localhost:9323](http://localhost:9323).
 
-## Contributing
-
-If you'd like to contribute, feel free to submit a pull request. Ensure your code follows the existing coding standards and includes appropriate test coverage.
-
 ---
 
 Happy Testing! 🚀
