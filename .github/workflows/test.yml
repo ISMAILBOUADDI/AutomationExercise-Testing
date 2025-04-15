@@ -45,9 +45,3 @@ jobs:
           name: playwright-report
           path: playwright-report/
           retention-days: 7
-
-      - name: Attest report
-        if: always()
-        uses: actions/attest-build-provenance@v2
-        with:
-          subject-path: playwright-report/index.html
