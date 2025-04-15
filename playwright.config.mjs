@@ -26,7 +26,7 @@ export default defineConfig({
   },
   retries: 1,
   workers: 1,
-  reporter: 'html',
+  reporter: [['html', { outputFolder: 'playwright-report', open: 'never' }]],
   use: {
     baseURL: 'http://automationexercise.com',
     trace: 'retain-on-failure',
