@@ -31,6 +31,13 @@ jobs:
       - name: Run Playwright tests
         run: npm test
 
+      - name: Debug: Check if report exists
+        run: |
+          echo "Files:"
+          ls -la
+          echo "Report folder:"
+          ls -la playwright-report || echo "❌ No report folder"
+
       - name: Upload Playwright report
         if: always()
         uses: actions/upload-artifact@v4
