@@ -31,7 +31,7 @@ jobs:
       - name: Run Playwright tests
         run: npm test
 
-      - name: Debug: Check if report exists
+      - name: Debug Check if report exists
         run: |
           echo "Files:"
           ls -la
